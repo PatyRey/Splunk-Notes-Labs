@@ -31,7 +31,7 @@ A calculated field can help wen performing repetitive, long or complex eval comm
 | eval bandwith = round(sc_bytes/1024/1024,2) 
 
 Without the calculated field
-![d66e93db85d10a273d8f4ce4f4428f85.png](../_resources/d66e93db85d10a273d8f4ce4f4428f85.png)
+<img src=_resources/d66e93db85d10a273d8f4ce4f4428f85.png>
 
 with calculated field "bandwith" ( bandwith=round(sc_bytes/1024/1024,2) ) 
 ![6a461d7e718683a8d365bf45f1746ec6.png](../_resources/6a461d7e718683a8d365bf45f1746ec6.png)
