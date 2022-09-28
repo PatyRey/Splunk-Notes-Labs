@@ -47,10 +47,10 @@ Event types allow the user to categorized events based on search terms
 Event types help to simplify searches
 
 To create a event type  Create a search 
-![2d78e39fa79d37d566dc6d94f8159306.png](../_resources/2d78e39fa79d37d566dc6d94f8159306.png)
+<img src=_resources/2d78e39fa79d37d566dc6d94f8159306.png>
 
 then Go to search and save as event type
-![7621a1af41d7c6b1cc20082216cf9b04.png](../_resources/7621a1af41d7c6b1cc20082216cf9b04.png)
+<img src=_resources/7621a1af41d7c6b1cc20082216cf9b04.png>
 
 Name the event and add tags, you can also pick a color and a priority for the event, all events with that color will have the same priority  
 ![ae884acd370a31df80eaca304cedbdea.png](../_resources/ae884acd370a31df80eaca304cedbdea.png)
