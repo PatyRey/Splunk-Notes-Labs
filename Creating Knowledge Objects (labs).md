@@ -34,7 +34,7 @@ Without the calculated field
 <img src=_resources/d66e93db85d10a273d8f4ce4f4428f85.png>
 
 with calculated field "bandwith" ( bandwith=round(sc_bytes/1024/1024,2) ) 
-![6a461d7e718683a8d365bf45f1746ec6.png](../_resources/6a461d7e718683a8d365bf45f1746ec6.png)
+<img src=_resources/6a461d7e718683a8d365bf45f1746ec6.png>
 
 Calculated fields must be based on extracted fields
 
@@ -53,17 +53,17 @@ then Go to search and save as event type
 <img src=_resources/7621a1af41d7c6b1cc20082216cf9b04.png>
 
 Name the event and add tags, you can also pick a color and a priority for the event, all events with that color will have the same priority  
-![ae884acd370a31df80eaca304cedbdea.png](../_resources/ae884acd370a31df80eaca304cedbdea.png)
+<img src=_resources/ae884acd370a31df80eaca304cedbdea.png>
 
 Running a search with the value of an event type will return events that match the search terms used to create the event type
-![acb5a39498ff22624e5fccc3d0837088.png](../_resources/acb5a39498ff22624e5fccc3d0837088.png)
+<img src=_resources/acb5a39498ff22624e5fccc3d0837088.png>
 
 The event type will show in the field sidebar
 
 An event type can also be built in the event type builder
 
 From an event information id we can select Built event type on the Event Action menu
-![afd187b271f8381be24ac018bf4d948c.png](../_resources/afd187b271f8381be24ac018bf4d948c.png)
+<img src=_resources/afd187b271f8381be24ac018bf4d948c.png>
 
 To manage event types we go to settings and then event types
 We can set priorities to tell splunk if there is an event that fits in multiple event types, which event type takes precedence in the display order
@@ -101,16 +101,16 @@ When to create event types vs when to use a saved report
 
 We start with a search summing all the sales by vendor and then passing those to an eval comman that formats the totals to display in US dollars amounts
 
-![440527c5923bd7159d8b83b194c102c5.png](../_resources/440527c5923bd7159d8b83b194c102c5.png)
+<img src=_resources/440527c5923bd7159d8b83b194c102c5.png>
 
 To save us from having to enter the eval command each time we can create a Macro
 
 We go to settings, then advance search and then clicking the "add new" action for Search macros
-![0f50aeea2ef3391eea92dc3318c9a777.png](../_resources/0f50aeea2ef3391eea92dc3318c9a777.png)
+<img src=_resources/0f50aeea2ef3391eea92dc3318c9a777.png>
 
 To test the macro by piping the search into the macro instead of the eval command we use earlier, to use the macro we surround the name of the macro with a back tick ` `` ` character, the backtick tell splunk this is a macro and to replace it with the search in the macro definition
 
-![b754bd75a6e84d80774f4fe7df9b069a.png](../_resources/b754bd75a6e84d80774f4fe7df9b069a.png)
+<img src=_resources/b754bd75a6e84d80774f4fe7df9b069a.png>
 
 ##
 **Adding Arguments**
@@ -123,7 +123,7 @@ settings--> advance search --> search macros ---- Here we can set up our macros 
 
 To add an argument we clone the macro, the sample below shows that we are require 2 different arguments (name = convertUSD(2))
 We have to add the name of the arguments on the order that the command will be passed to the macro
-![56a948d8e6e90ce964774bc286a2d829.png](../_resources/56a948d8e6e90ce964774bc286a2d829.png)
+<img src=_resources/56a948d8e6e90ce964774bc286a2d829.png>
 
 ##
 **Validating Macro Arguments**
@@ -133,16 +133,16 @@ Splunk allows you to validate the arguments sent using an eval or boolean expres
 making a requirement that the "cmd" argument passed to the macro is either "fieldformat" or "eval" and if not send an error to the user
 
 We enter a boolean as a validation expression and a validation message to send the user if the boolean is false
-![925ddc64511ef66436a99ee55624e0b6.png](../_resources/925ddc64511ef66436a99ee55624e0b6.png)
+<img src=_resources/925ddc64511ef66436a99ee55624e0b6.png>
 
 Now if we search, we pass a command name as an argument
 ![4ec76e66ed37b94da44bed28e52bb1a3.png](../_resources/4ec76e66ed37b94da44bed28e52bb1a3.png)
 With this search we are converting with eval command so the results  do not sort numerically
 By passing a fieldformat command to the macro we can have numerically sort the results
-![7370e607eff07a8d2aaa24a9b806c1f2.png](../_resources/7370e607eff07a8d2aaa24a9b806c1f2.png)
+<img src=_resources/7370e607eff07a8d2aaa24a9b806c1f2.png>
 
 If we pass a nonvalid command to the macro we get a searchpass error with the error text appended
-![537c6a70cd5b33abea168cbe6791dab0.png](../_resources/537c6a70cd5b33abea168cbe6791dab0.png)
+<img src=_resources/537c6a70cd5b33abea168cbe6791dab0.png>
 
 Splunk has a search expansion tool that allows you to preview your search by extending the entire search without running it
 
@@ -150,7 +150,7 @@ Splunk has a search expansion tool that allows you to preview your search by ext
 Splunk has a search expansion tool that allow you to expand your search without running it
 
 With the search in the search bar use command shift E (or control shift E in microsoft or linux)
-![8ec705581c08a8987ea91202bb92f4a2.png](../_resources/8ec705581c08a8987ea91202bb92f4a2.png)
+<img src=_resources/8ec705581c08a8987ea91202bb92f4a2.png>
 The search expansion window will open and you will be able to see the search as it will be submitted.
 This comes handy if you want to copy a fragment of the expanded search and use it in another search
 
